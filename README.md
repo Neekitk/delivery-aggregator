@@ -135,3 +135,43 @@ HTTPS обеспечивает защищенную передачу инфор�
     "weight": 2.5
   }
 }
+```
+
+# Практическое задание №2
+## Проектирование структуры проекта и настройка СКВ
+
+### Выбранный программный продукт
+
+**Продукт 2. Бэкенд-сервис на C# (.NET Core).**
+
+ Консольное или веб-приложение для пакетной обработки данных и взаимодействия со сторонними API по протоколу HTTPS.
+ 
+```text
+delivery-aggregator/
+│
+├── src/
+│   ├── Models/
+│   │   ├── Order.cs
+│   │   └── DeliveryStatus.cs
+│   │
+│   ├── Integrations/
+│   │   ├── CdekApiClient.cs
+│   │   └── RussianPostApiClient.cs
+│   │
+│   ├── Services/
+│   │   └── DeliveryService.cs
+│   │
+│   └── Program.cs
+│
+├── tests/
+│   └── DeliveryAggregator.Tests/
+│
+├── config/
+│   └── appsettings.example.json
+│
+├── docs/
+│   └── integration-description.md
+│
+├── .gitignore
+└── README.md
+```
